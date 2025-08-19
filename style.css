@@ -1,0 +1,228 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ ul#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#task-list li {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+ body{
+    background-color: #000430;
+    color:azure;
+ }
+
+ .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+    max-width: 600px;
+
+ }
+
+.stats-container{
+    padding: 30px;
+    border-radius: 20px;
+    border:2px solid #000670;
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+.details{
+    width: 100%;
+}
+
+#progressbar{
+    height: 10px;
+    background-color:rgb(3, 133, 177) ;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#progress{
+    width:70%;
+    height: 10px;
+    background-color: rgb(66, 255, 255);
+    border-radius: 10px;
+    transition: all 0.4s ease;
+
+}
+
+#numbers{
+    width: 100px;
+    height :100px;
+    display: flex;
+    background-color: #000650 ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display:flex;
+}
+input{
+    flex:1;
+    padding: 15px;
+    background-color: #000650;
+    border: 1px solid #088ecc;
+    border-radius: 4%;
+    outline: none;
+
+
+}
+button{
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000650;
+    
+}
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width:100%;
+    list-style: none;
+}
+
+
+.taskItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0a0a4f, #1a1a7a);
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.taskItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.task-left input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4cafef;
+  cursor: pointer;
+}
+
+
+
+.task-left p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.taskItem.completed .task-left p {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(0) invert(0.6) sepia(1) saturate(5) hue-rotate(200deg);
+}
+
+/* Input field when editing */
+.edit-input {
+    font-size: 16px;
+    padding: 6px 10px;
+    border: 1.5px solid #888;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    width: 65%;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+/* Transparent buttons */
+.save-btn, .cancel-btn {
+    margin-left: 6px;
+    background: transparent;
+    border: 1.5px solid transparent;
+    padding: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease-in-out;
+    color: #333;
+}
+
+/* Save button subtle green border on hover */
+.save-btn:hover {
+    border-color: #4caf50;
+    color: #4caf50;
+}
+
+/* Cancel button subtle red border on hover */
+.cancel-btn:hover {
+    border-color: #f44336;
+    color: #f44336;
+}
+
+#numbers{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background-color: #000650;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
